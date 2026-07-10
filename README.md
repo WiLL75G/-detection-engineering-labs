@@ -31,4 +31,4 @@ A self contained environment: a macOS host, an Ubuntu Server victim, a Windows 1
 
 ## About
 
-Built and documented by William James, learning in public across detection engineering and SOC analysis. Detection and response are treated as two halves of the same job: seeing the attack, and running the response. Claims are kept honest to what was actually demonstrated in the lab.
+Built and documented by William Gokah, learning in public across detection engineering and SOC analysis. Detection and response are treated as two halves of the same job: seeing the attack, and running the response. Claims are kept honest to what was actually demonstrated in the lab.
