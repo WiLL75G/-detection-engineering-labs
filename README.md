@@ -6,10 +6,10 @@ Hands on detection engineering and SOC analysis labs. Each lab runs a real attac
 
 | Lab | Focus | Platform | MITRE | Status |
 | --- | --- | --- | --- | --- |
-| [01 Wazuh SSH Brute Force](01-wazuh-ssh-bruteforce/) | Detecting a brute force through to confirmed compromise | Wazuh 4.14.6 | T1110 | Complete |
-| [02 ServiceNow ITSM Incident Lifecycle](02-servicenow-itsm/) | Working a security incident New to Closed with SLA tracking | ServiceNow | T1110 | Complete |
-| [03 Suricata IDS Custom Rules](03-suricata-ids/) | Writing network detection rules for scan and brute force | Suricata 7.0.3 | T1046, T1110 | Complete |
-| [04 PowerShell Investigation](04-powershell-investigation/) | Recovering obfuscated PowerShell from endpoint telemetry | Windows, Sysmon | T1059.001 | Complete |
+| [Wazuh SSH Brute Force](01-wazuh-ssh-bruteforce/) | Detecting a brute force through to confirmed compromise | Wazuh 4.14.6 | T1110 | Complete |
+| [ServiceNow ITSM Incident Lifecycle](02-servicenow-itsm/) | Working a security incident New to Closed with SLA tracking | ServiceNow | T1110 | Complete |
+| [Suricata IDS Custom Rules](03-suricata-ids/) | Writing network detection rules for scan and brute force | Suricata 7.0.3 | T1046, T1110 | Complete |
+| [PowerShell Investigation](04-powershell-investigation/) | Recovering obfuscated PowerShell from endpoint telemetry | Windows, Sysmon | T1059.001 | Complete |
 
 ## What each lab demonstrates
 
