@@ -13,13 +13,13 @@ Hands on detection engineering and SOC analysis labs. Each lab runs a real attac
 
 ## What each lab demonstrates
 
-**-Wazuh SSH Brute Force.** A Kali attacker runs Hydra against SSH on an Ubuntu host monitored by Wazuh. The detection chain is traced from individual failed logins through frequency correlation to a level 12 alert confirming the failure then success compromise, then traced back to the attacker source IP and mapped to MITRE T1110.
+**Wazuh SSH Brute Force.** A Kali attacker runs Hydra against SSH on an Ubuntu host monitored by Wazuh. The detection chain is traced from individual failed logins through frequency correlation to a level 12 alert confirming the failure then success compromise, then traced back to the attacker source IP and mapped to MITRE T1110.
 
-**-ServiceNow ITSM Incident Lifecycle.** The Wazuh detection is operationalized as a managed incident in a live ServiceNow instance. The incident is created, prioritized using the Impact by Urgency matrix, routed, worked with documented triage and containment notes, resolved, and permanently closed, with automatic SLA tracking and an honestly documented SLA breach.
+**ServiceNow ITSM Incident Lifecycle.** The Wazuh detection is operationalized as a managed incident in a live ServiceNow instance. The incident is created, prioritized using the Impact by Urgency matrix, routed, worked with documented triage and containment notes, resolved, and permanently closed, with automatic SLA tracking and an honestly documented SLA breach.
 
-**-Sricata IDS Custom Rules.** Suricata is deployed as a network sensor on the Ubuntu host, and two custom detection rules are written from scratch: a port scan detector and an SSH brute force detector. Both fire on live attacks from Kali. The SSH brute force rule detects the same attack that Wazuh caught host side in lab 01, demonstrating defense in depth across two independent sensors and two layers.
+**Sricata IDS Custom Rules.** Suricata is deployed as a network sensor on the Ubuntu host, and two custom detection rules are written from scratch: a port scan detector and an SSH brute force detector. Both fire on live attacks from Kali. The SSH brute force rule detects the same attack that Wazuh caught host side in lab 01, demonstrating defense in depth across two independent sensors and two layers.
 
-**-PowerShell Investigation.** Suspicious PowerShell simulating real attacker behavior is executed on the Windows host and reconstructed from Sysmon and PowerShell Script Block Logging. The investigation recovers the deobfuscated plaintext of a base64-encoded command, identifies a download cradle, and traces a discovery sequence, showing endpoint forensics that reveals not just that PowerShell ran but exactly what it did.
+**PowerShell Investigation.** Suspicious PowerShell simulating real attacker behavior is executed on the Windows host and reconstructed from Sysmon and PowerShell Script Block Logging. The investigation recovers the deobfuscated plaintext of a base64-encoded command, identifies a download cradle, and traces a discovery sequence, showing endpoint forensics that reveals not just that PowerShell ran but exactly what it did.
 
 ## Coverage
 
