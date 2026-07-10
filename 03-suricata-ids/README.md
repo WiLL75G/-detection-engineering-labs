@@ -34,7 +34,7 @@ Correct interface selection is the foundation of network IDS. Pointing Suricata 
 
 Suricata was installed from the Ubuntu package system. Its default configuration monitored eth0, an interface that does not exist on this host. The af-packet interface was corrected to enp0s1.
 
-![Interface fix eth0 to enp0s1](screenshots/03_interface_fix_enp0s1.png)
+![Interface fix eth0 to enp0s1](secreenshots/03_interface_fix_enp0s1.png)
 
 **SOC Observations**
 
@@ -44,9 +44,9 @@ The default eth0 configuration is a common Suricata pitfall. This host uses pred
 
 The service was started and confirmed running, then its capture counters were checked while generating test traffic to prove it was reading the wire.
 
-![Suricata service running](screenshots/01_suricata_service_running.png)
+![Suricata service running](secreenshots/01_suricata_service_running.png)
 
-![Packet capture confirmed](screenshots/02_suricata_packet_capture.png)
+![Packet capture confirmed](secreenshots/02_suricata_packet_capture.png)
 
 **SOC Observations**
 
@@ -56,9 +56,9 @@ A running service is not the same as a capturing one. The capture.kernel_packets
 
 A config test surfaced two issues: the default ruleset file was absent, and Suricata's default rule path (/var/lib/suricata/rules) differed from where the custom rule was first written. The Emerging Threats Open ruleset was downloaded, and the custom rule file was placed in the correct path.
 
-![Config test and rule path](screenshots/04_config_test_rulepath.png)
+![Config test and rule path](secreenshots/04_config_test_rulepath.png)
 
-![Suricata update loads ruleset](screenshots/05_suricata_update_ruleset.png)
+![Suricata update loads ruleset](secreenshots/05_suricata_update_ruleset.png)
 
 **SOC Observations**
 
@@ -74,11 +74,11 @@ Rule sid 1000002 (SSH brute-force): alert on 5 or more connection attempts to po
 
 The attacker-side view of each attack is shown below, followed by the defender-side detection.
 
-![Kali Nmap port scan](screenshots/07_kali_nmap_portscan.png)
+![Kali Nmap port scan](secreenshots/07_kali_nmap_portscan.png)
 
-![Kali Hydra brute-force](screenshots/08_kali_hydra_bruteforce.png)
+![Kali Hydra brute-force](secreenshots/08_kali_hydra_bruteforce.png)
 
-![Both custom rules firing](screenshots/06_custom_rules_both_alerts.png)
+![Both custom rules firing](secreenshots/06_custom_rules_both_alerts.png)
 
 **SOC Observations**
 
@@ -129,7 +129,7 @@ Writing detection rules is different from running someone else's. Getting these 
 ```
 03-suricata-ids/
 ├── README.md
-└── screenshots/
+└── secreenshots/
     ├── 01_suricata_service_running.png
     ├── 02_suricata_packet_capture.png
     ├── 03_interface_fix_enp0s1.png
