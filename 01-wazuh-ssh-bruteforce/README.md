@@ -13,7 +13,7 @@ One source IP, a burst of failed SSH logins, then one success. The whole differe
 | Attacker | Kali Linux, 192.168.64.15 |
 | MITRE | T1110, T1110.001, T1021.004, T1078 |
 | Critical Alert | Rule 40112, level 12, failures followed by success |
-| Detection Date | 08 July 2026 |
+| Detection Date | 07 July 2026 |
 
 ## What This Is
 
