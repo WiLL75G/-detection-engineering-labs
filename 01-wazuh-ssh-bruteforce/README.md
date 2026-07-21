@@ -38,7 +38,7 @@ The level 12 alert is the finding that matters. A brute force that only fails is
 | Attacker host | Kali Linux, hostname Attacker-Tier4 |
 | Attacker source IP | 192.168.64.15 |
 | Monitoring platform | Wazuh 4.14.6, single node Docker stack |
-| Detection date | 08 July 2026 |
+| Detection date | 07 July 2026 |
 
 ## Investigation Methodology
 
